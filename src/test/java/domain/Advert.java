@@ -6,5 +6,7 @@ import io.qameta.allure.internal.shadowed.jackson.annotation.JsonIgnorePropertie
 public class Advert {
 
     public String type;
+    public String name;
+    public String start;
 
 }

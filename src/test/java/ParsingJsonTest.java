@@ -14,6 +14,8 @@ public class ParsingJsonTest {
         ObjectMapper mapper = new ObjectMapper();
         Advert ad = mapper.readValue(Paths.get("src/test/resources/testJ.json").toFile(), Advert.class);
         assertThat(ad.type).isEqualTo("MIDROLL");
+        assertThat(ad.name).isEqualTo("QA");
+        assertThat(ad.start).isEqualTo("10");
 
     }
 }
